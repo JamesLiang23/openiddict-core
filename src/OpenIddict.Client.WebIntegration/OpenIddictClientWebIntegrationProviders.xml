@@ -1815,6 +1815,25 @@
   </Provider>
 
   <!--
+                                                ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+                                                ██ ███ ██ ▄▄▄██▄ ▄██▄▀█▀▄█▄ ▄██ ▀██ █
+                                                ██ █ █ ██ ▄▄▄███ █████ ████ ███ █ █ █
+                                                ██▄▀▄▀▄██ ▀▀▀██▀ ▀██▀▄█▄▀█▀ ▀██ ██▄ █
+                                                ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+  -->
+
+  <Provider Name="WeiXin" Id="72c63db0-7686-462d-abb2-0c42e1b5e140"
+            Documentation="https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_webpage_authorization.html">
+    <Environment Issuer="https://open.weixin.qq.com/">
+      <Configuration AuthorizationEndpoint="https://open.weixin.qq.com/connect/qrconnect"
+                     TokenEndpoint="https://api.weixin.qq.com/sns/oauth2/access_token"
+                     UserinfoEndpoint="https://api.weixin.qq.com/sns/userinfo">
+        <CodeChallengeMethod Value="S256" />
+      </Configuration>
+    </Environment>
+  </Provider>
+
+  <!--
                                       ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
                                       ██ ███ █▄ ▄██ █▀▄█▄ ▄██ ▄▀▄ ██ ▄▄▄██ ▄▄▀█▄ ▄█ ▄▄▀██
                                       ██ █ █ ██ ███ ▄▀███ ███ █ █ ██ ▄▄▄██ ██ ██ ██ ▀▀ ██
